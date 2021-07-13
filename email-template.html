@@ -34,18 +34,56 @@
             font-size: 14pt;
             vertical-align: top;
         }
+        /* Body & Container */
+        body{
+            background-color: #f6f6f6;
+            width: 100%;
+        }
+
+        /* Set a max-width, and make it display as block so it will automatically 
+        stretch to their width, but will also shrink down on a phone or something*/
+        .container{
+            display: block;
+            margin: 0 auto !important;
+            /* cenetering of elements */
+            max-width: 580px;
+            padding: 10px;
+            width: 580px;
+        }
+        .content{
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto;
+            max-width: 580px;
+
+
+        }
+
     </style>
 </head>
 <body>
-    <table>
+    <span class="preheader">
+        <!-- What some clients will see as a preview -->
+    </span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0"class="main table">
         table
         <tbody>
             table body
             <tr>
-                table row
-                <td>table data</td>
-                <td>table data</td>
-                <td>table data</td>
+                <td>&nsbp</td>
+                <td class="container">
+                    <div class="content">
+                        <!-- Start Centered White Container -->
+                        <table role="presentation" class="main">
+                            <!-- Start Main Content Area -->
+                            <tr>
+                                <td class="wrapper">
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
             </tr>
         </tbody>
     </table>
