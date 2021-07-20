@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllMart - Suggested Products</title>
+    <style>
+        /* Global Resets */
+        a{
+            text-decoration: none;
+        }
+        img{
+           border: none;
+           -ms-interpolation-mode: bicubic;
+           max-width: 100%; 
+        }
+        body{
+            background-color: #f6f6f6;
+            font-family: sans-serif;
+            -webkit-font-smoothing:antialiased;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        table{
+            border-collapse: separate;
+            mso-table-lspace:0pt;
+            mso-table-rspace: 0pt;
+            width:100%;
+        }
+        table td{
+            font-family: sans-serif;
+            font-size: 14pt;
+            vertical-align: top;
+        }
+        /* Body & Container */
+        body{
+            background-color: #f6f6f6;
+            width: 100%;
+        }
+
+        /* Set a max-width, and make it display as block so it will automatically 
+        stretch to their width, but will also shrink down on a phone or something*/
+        .container, .footer{
+            display: block;
+            margin: 0 auto !important;
+            /* cenetering of elements */
+            max-width: 580px;
+            padding: 10px;
+            width: 580px;
+        }
+        .content{
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto;
+            max-width: 580px;
+        }
+
+        /* Footer Elements */
+        table.footer{
+            width: 100%;
+            padding: 0 auto;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+        table.footer > tbody{
+            width: 100%;
+        }
+        .footer tbody tr{
+            width: 100%;
+        }
+        .footer tbody tr td{
+            text-align: center;
+            padding: 0 4vw;
+        } 
+      tfoot td {
+          text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <span class="preheader">
+        <!-- What some clients will see as a preview -->
+    </span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0"class="main-table">
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="container">
+                    <div class="content">
+                        <!-- Start Centered White Container -->
+                        <table role="presentation" class="main">
+                            <!-- Start Main Content Area -->
+                            <tr>
+                                <td class="wrapper">
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <p>AllMart</p>
+                                                <table>
+                                                    <!-- Deals Statement -->
+                                                    <tr>
+                                                        <p>Hey, John</p>
+                                                        <p>Your cart is waiting for you</p>
+                                                        <p>We noticed there were some items left in your shopping cart. 
+                                                        If you complere your purchase, if your are ready to complete 
+                                                        your order. Your a click away!</p>
+                                                        <a href="#">Complete your order</a>
+                                                    </tr>
+                                                    <tr>
+                                                        <!-- Product listing -->
+                                                        <table class="Product listing">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Item</th>
+                                                                    <th>Price</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <!-- Card Element Component -->
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>
+                                                                       <div>
+                                                                           <!-- <img src="" alt=""> -->
+                                                                           <p>Playstation 5</p>
+                                                                           <p>1x</p>
+                                                                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </p>
+                                                                       </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <p>$499.99</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- End of main content -->
+                        <!-- Start of Footer -->
+                        <table role="presentation" class="footer"  border="0" cellpadding="0" cellspacing="20">
+                            <tr>
+                                <td><a href="#">About</a></td>
+                                <td><a href="#">Privacy Policy</a></td>
+                                <td><a href="#">Help Center</a></td>
+                            </tr>
+                            <tr>
+                                <!-- Social Media Icons -->
+                            </tr>
+                            <!-- <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <p>© 2020 AllMart</p>
+                                </td>
+                                <td>
+                                </td>
+                            </tr> -->
+                            <tfoot>
+                                <td colspan="3">
+                                    <p>© 2020 AllMart</p>
+                                </td>
+                            </tfoot>
+                        </table>
+                        <!-- End of Footer -->
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
