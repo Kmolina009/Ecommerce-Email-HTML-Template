@@ -42,7 +42,13 @@
             background-color: #f6f6f6;
             width: 100%;
         }
-
+        .header{
+            background-color: #7DECF3;
+            padding: 5% 4%;
+        }
+        .allmart-logo{
+            max-width: 200px;
+        }
         /* Set a max-width, and make it display as block so it will automatically 
         stretch to their width, but will also shrink down on a phone or something*/
         .container, .footer{
@@ -60,6 +66,15 @@
             max-width: 580px;
         }
 
+        .product-image{
+            line-height: 10%;
+            width: 30%;
+        }
+        .product-image img{
+            max-height: 128px;
+            width: 90%;
+
+        }
         /* Footer Elements */
         table.footer{
             width: 100%;
@@ -95,12 +110,18 @@
                         <!-- Start Centered White Container -->
                         <table role="presentation" class="main">
                             <!-- Start Main Content Area -->
+                            <td  class="header"colspan="3">
+                                <img class="allmart-logo"src="./image-assets/allmart-logo.png" alt="">
+                            </td>
                             <tr>
                                 <td class="wrapper">
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td>
-                                                <p>AllMart</p>
+                                                <!-- <td  class="header"colspan="3">
+                                                    <img class="allmart-logo"src="./image-assets/allmart-logo.png" alt="">
+                                                </td> -->
+                                                
                                                 <table>
                                                     <!-- Deals Statement -->
                                                     <tr>
@@ -116,13 +137,16 @@
                                                         <table class="Product listing">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>Item</th>
+                                                                    <th colspan="2">Item</th>
                                                                     <th>Price</th>
                                                                 </tr>
                                                             </thead>
                                                             <!-- Card Element Component -->
                                                             <tbody>
                                                                 <tr>
+                                                                    <td class="product-image">
+                                                                        <img src="./image-assets/ps5.jpg" title="PS4" />
+                                                                    </td>
                                                                     <td>
                                                                        <div>
                                                                            <!-- <img src="" alt=""> -->
