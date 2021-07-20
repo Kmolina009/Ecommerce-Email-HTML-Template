@@ -49,6 +49,13 @@
         .allmart-logo{
             max-width: 200px;
         }
+        .cta-button{
+            color: white;
+            background-color: #268ED2;
+            padding: 2%;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
         /* Set a max-width, and make it display as block so it will automatically 
         stretch to their width, but will also shrink down on a phone or something*/
         .container, .footer{
@@ -65,7 +72,9 @@
             margin: 0 auto;
             max-width: 580px;
         }
-
+        .product-listing{
+            margin-top: 5%;
+        }
         .product-image{
             line-height: 10%;
             width: 30%;
@@ -148,16 +157,16 @@
                                                 <table>
                                                     <!-- Deals Statement -->
                                                     <tr>
-                                                        <p>Hey, John</p>
+                                                        <p style="font-weight: 600;">Hey, John</p>
                                                         <p>Your cart is waiting for you</p>
                                                         <p>We noticed there were some items left in your shopping cart. 
                                                         If you complere your purchase, if your are ready to complete 
                                                         your order. Your a click away!</p>
-                                                        <a href="#">Complete your order</a>
+                                                        <a  class="cta-button"href="#">Complete your order</a>
                                                     </tr>
                                                     <tr>
                                                         <!-- Product listing -->
-                                                        <table class="Product listing">
+                                                        <table class="product-listing">
                                                             <thead>
                                                                 <tr>
                                                                     <th colspan="2">Item</th>
