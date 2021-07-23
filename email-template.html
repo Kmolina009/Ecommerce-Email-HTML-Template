@@ -61,9 +61,14 @@
         }
         /* Set a max-width, and make it display as block so it will automatically 
         stretch to their width, but will also shrink down on a phone or something*/
+        
+        .container{
+            border-bottom:3px solid black;
+        }
         .container, .footer{
             display: block;
             margin: 0 auto !important;
+            background-color: #E5E5E5;
             /* cenetering of elements */
             max-width: 580px;
             padding: 10px;
@@ -77,6 +82,15 @@
         }
         .product-listing{
             margin-top: 5%;
+            background-color: white;
+        }
+        .product-listing thead{
+            margin-top: 5%;
+            /* background-color: white; */
+            
+        }
+        .product-listing thead tr th{
+            border-bottom:1px solid black;
         }
         .product-image{
             line-height: 10%;
@@ -125,7 +139,7 @@
       }
       tr.social-media-icons > td > img{
           padding: 7%  2%  0 2%;
-          width: 10%;
+          width: 6%;
       }
       body > p{
           text-align: center;
@@ -153,16 +167,12 @@
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td>
-                                                <!-- <td  class="header"colspan="3">
-                                                    <img class="allmart-logo"src="./image-assets/allmart-logo.png" alt="">
-                                                </td> -->
-                                                
                                                 <table>
                                                     <!-- Deals Statement -->
                                                     <tr>
-                                                        <p style="font-weight: 600;">Hey, John</p>
-                                                        <p>Your cart is waiting for you</p>
-                                                        <p>We noticed there were some items left in your shopping cart. 
+                                                        <p style="font-weight: 600; font-size: 2.5rem; margin-bottom: 2%;">Hey, John!</p>
+                                                        <p style="font-weight: 500; font-size: 1.8rem; margin: 1.5% 0 1.5% 0; font-family:'Roboto', sans-serif;color:#686868;">Your cart is waiting for you</p>
+                                                        <p style="color:#686868; margin: 1.5% 0 2% 0;">We noticed there were some items left in your shopping cart. 
                                                         If you complere your purchase, if your are ready to complete 
                                                         your order. Your a click away!</p>
                                                         <a  class="cta-button"href="#">Complete your order</a>
