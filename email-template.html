@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>AllMart - Suggested Products</title>
     <style>
         /* Global Resets */
@@ -49,11 +52,17 @@
         .allmart-logo{
             max-width: 200px;
         }
-        /* Set a max-width, and make it display as block so it will automatically 
-        stretch to their width, but will also shrink down on a phone or something*/
+        .cta-button{
+            color: white;
+            background-color: #268ED2;
+            padding: 2%;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
         .container, .footer{
             display: block;
             margin: 0 auto !important;
+            background-color: #E5E5E5;
             /* cenetering of elements */
             max-width: 580px;
             padding: 10px;
@@ -65,7 +74,17 @@
             margin: 0 auto;
             max-width: 580px;
         }
-
+        .product-listing{
+            margin: 5% 0 ;
+            background-color: white;
+        }
+        .product-listing thead{
+            margin-top: 5%;
+            
+        }
+        .product-listing thead tr th{
+            border-bottom:1px solid black;
+        }
         .product-image{
             line-height: 10%;
             width: 30%;
@@ -77,6 +96,7 @@
         }
         /* Footer Elements */
         table.footer{
+            border-top: 1px solid black ;
             width: 100%;
             padding: 0 auto;
             table-layout: fixed;
@@ -92,8 +112,40 @@
             text-align: center;
             padding: 0 4vw;
         } 
+        table.footer > tbody > tr:nth-child(1) > td {
+            width: 33%;
+        }
       tfoot td {
           text-align: center;
+      }
+      table.social-media-icons{
+          display: inline;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 300px;
+          height: 10%;
+      }
+      .social-media-icons tbody{
+          display: inline;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 300px;
+          height: 10%;
+          column-span: 3;
+      }
+      tr.social-media-icons > td > img{
+          padding: 7%  2%  0 2%;
+          width: 6%;
+      }
+      body > p{
+          text-align: center;
+      }
+      @media screen and (max-width:600px) {
+          .cta-button{
+              text-align: center;
+              padding-right: 34%;
+              padding-left: 34%;
+          }
       }
     </style>
 </head>
@@ -118,23 +170,19 @@
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td>
-                                                <!-- <td  class="header"colspan="3">
-                                                    <img class="allmart-logo"src="./image-assets/allmart-logo.png" alt="">
-                                                </td> -->
-                                                
                                                 <table>
                                                     <!-- Deals Statement -->
                                                     <tr>
-                                                        <p>Hey, John</p>
-                                                        <p>Your cart is waiting for you</p>
-                                                        <p>We noticed there were some items left in your shopping cart. 
+                                                        <p style="font-weight: 600; font-size: 2.5rem; margin-bottom: 2%;">Hey, John!</p>
+                                                        <p style="font-weight: 500; font-size: 1.8rem; margin: 1.5% 0 1.5% 0; font-family:'Roboto', sans-serif;color:#686868;">Your cart is waiting for you</p>
+                                                        <p style="color:#686868; margin: 1.5% 0 2% 0;">We noticed there were some items left in your shopping cart. 
                                                         If you complere your purchase, if your are ready to complete 
                                                         your order. Your a click away!</p>
-                                                        <a href="#">Complete your order</a>
+                                                        <a  class="cta-button"href="#">Complete your order</a>
                                                     </tr>
                                                     <tr>
                                                         <!-- Product listing -->
-                                                        <table class="Product listing">
+                                                        <table class="product-listing">
                                                             <thead>
                                                                 <tr>
                                                                     <th colspan="2">Item</th>
@@ -166,37 +214,29 @@
                                             </td>
                                         </tr>
                                     </table>
+                                    <!-- Table Footer -->
+                                    <table role="presentation" class="footer"  border="0" cellpadding="0" cellspacing="20">
+                                        <tr>
+                                            <td><a href="#">About</a></td>
+                                            <td><a href="#">Privacy Policy</a></td>
+                                            <td><a href="#">Help Center</a></td>
+                                                <tr class="social-media-icons">
+                                                <!-- Social Media Icons -->
+                                                <td colspan="3">
+                                                    <img src="./image-assets/social-media-icons/svg/004-facebook.svg" alt=""><a href=""></a></img>
+                                                    <img src="./image-assets/social-media-icons/svg/002-instagram.svg" alt=""><a href=""></a></img>
+                                                    <img src="./image-assets/social-media-icons/svg/001-youtube.svg" alt=""><a href=""></a></img>
+                                                    <img src="./image-assets/social-media-icons/svg/003-twitter.svg" alt=""><a href=""></a></img>
+                                                </td>
+                                            </tr>
+                                            <td colspan="3">
+                                                <p>© 2020 AllMart</p>
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
-                        </table>
-                        <!-- End of main content -->
-                        <!-- Start of Footer -->
-                        <table role="presentation" class="footer"  border="0" cellpadding="0" cellspacing="20">
-                            <tr>
-                                <td><a href="#">About</a></td>
-                                <td><a href="#">Privacy Policy</a></td>
-                                <td><a href="#">Help Center</a></td>
-                            </tr>
-                            <tr>
-                                <!-- Social Media Icons -->
-                            </tr>
-                            <!-- <tr>
-                                <td>
-                                </td>
-                                <td>
-                                    <p>© 2020 AllMart</p>
-                                </td>
-                                <td>
-                                </td>
-                            </tr> -->
-                            <tfoot>
-                                <td colspan="3">
-                                    <p>© 2020 AllMart</p>
-                                </td>
-                            </tfoot>
-                        </table>
-                        <!-- End of Footer -->
-                    </div>
+                    </table>
                 </td>
             </tr>
         </tbody>
