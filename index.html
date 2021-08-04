@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>AllMart - Suggested Products</title>
+    <style>
+        /* Global Resets */
+        a{
+            text-decoration: none;
+        }
+        img{
+           border: none;
+           -ms-interpolation-mode: bicubic;
+           max-width: 100%; 
+        }
+        body{
+            background-color: #f6f6f6;
+            font-family: sans-serif;
+            -webkit-font-smoothing:antialiased;
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        table{
+            border-collapse: separate;
+            mso-table-lspace:0pt;
+            mso-table-rspace: 0pt;
+            width:100%;
+        }
+        table td{
+            font-family: sans-serif;
+            font-size: 14pt;
+            vertical-align: top;
+        }
+        /* Body & Container */
+        body{
+            background-color: #f6f6f6;
+            width: 100%;
+        }
+        .header{
+            background-color: #7DECF3;
+            padding: 5% 4%;
+        }
+        .allmart-logo{
+            max-width: 200px;
+        }
+        .cta-button{
+            color: white;
+            background-color: #268ED2;
+            padding: 2%;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .container, .footer{
+            display: block;
+            margin: 0 auto !important;
+            background-color: #E5E5E5;
+            /* cenetering of elements */
+            max-width: 580px;
+            padding: 10px;
+            width: 580px;
+        }
+        .content{
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto;
+            max-width: 580px;
+        }
+        .product-listing{
+            margin: 5% 0 ;
+            background-color: white;
+        }
+        .product-listing thead{
+            margin-top: 5%;
+            
+        }
+        .product-listing thead tr th{
+            border-bottom:1px solid black;
+        }
+        .product-image{
+            line-height: 10%;
+            width: 30%;
+        }
+        .product-image img{
+            max-height: 128px;
+            width: 90%;
+
+        }
+        /* Footer Elements */
+        table.footer{
+            border-top: 1px solid black ;
+            width: 100%;
+            padding: 0 auto;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+        table.footer > tbody{
+            width: 100%;
+        }
+        .footer tbody tr{
+            width: 100%;
+        }
+        .footer tbody tr td{
+            text-align: center;
+            padding: 0 4vw;
+        } 
+        table.footer > tbody > tr:nth-child(1) > td {
+            width: 33%;
+        }
+      tfoot td {
+          text-align: center;
+      }
+      table.social-media-icons{
+          display: inline;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 300px;
+          height: 10%;
+      }
+      .social-media-icons tbody{
+          display: inline;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 300px;
+          height: 10%;
+          column-span: 3;
+      }
+      tr.social-media-icons > td > img{
+          padding: 7%  2%  0 2%;
+          width: 6%;
+      }
+      body > p{
+          text-align: center;
+      }
+      @media screen and (max-width:600px) {
+          .cta-button{
+              text-align: center;
+              padding: 0%;
+              display: block;
+              width: 500px;
+              height: 40px;
+              margin: 0 auto;
+              line-height: 2.5rem;
+          }
+      }
+    </style>
+</head>
+<body>
+    <span class="preheader">
+        <!-- What some clients will see as a preview -->
+    </span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0"class="main-table">
+        <tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="container">
+                    <div class="content">
+                        <!-- Start Centered White Container -->
+                        <table role="presentation" class="main">
+                            <!-- Start Main Content Area -->
+                            <td  class="header"colspan="3">
+                                <img class="allmart-logo" src="https://i.ibb.co/MM4pvKR/allmart-logo.png" alt="AllMart">
+                            </td>
+                            <tr>
+                                <td class="wrapper">
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <table>
+                                                    <!-- Deals Statement -->
+                                                    <tr>
+                                                        <p style="font-weight: 600; font-size: 2.5rem; margin-bottom: 2%;">Hey, John!</p>
+                                                        <p style="font-weight: 500; font-size: 1.8rem; margin: 1.5% 0 1.5% 0; font-family:'Roboto', sans-serif;color:#686868;">Your cart is waiting for you</p>
+                                                        <p style="color:#686868; margin: 1.5% 0 2% 0;">We noticed there were some items left in your shopping cart. 
+                                                        If you complere your purchase, if your are ready to complete 
+                                                        your order. Your a click away!</p>
+                                                        <a  class="cta-button"href="#">Complete your order</a>
+                                                    </tr>
+                                                    <tr>
+                                                        <!-- Product listing -->
+                                                        <table class="product-listing">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="2">Item</th>
+                                                                    <th>Price</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <!-- Card Element Component -->
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="product-image">
+                                                                        <img src="https://i.ibb.co/0XBpX54/ps5.jpg" title="PS5" />
+                                                                    </td>
+                                                                    <td>
+                                                                       <div>
+                                                                           <p>Playstation 5</p>
+                                                                           <p>1x</p>
+                                                                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </p>
+                                                                       </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <p>$499.99</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- Table Footer -->
+                                    <table role="presentation" class="footer"  border="0" cellpadding="0" cellspacing="20">
+                                        <tr>
+                                            <td><a href="#">About</a></td>
+                                            <td><a href="#">Privacy Policy</a></td>
+                                            <td><a href="#">Help Center</a></td>
+                                                <tr class="social-media-icons">
+                                                <!-- Social Media Icons -->
+                                                <td colspan="3">
+                                                    <img src="https://i.ibb.co/RzcKwN4/smedia-icon-faebook.png" alt="Facebook"><a href="#"></a></img>
+                                                    <img src="https://i.ibb.co/x2QdyKF/smedia-icon-instagram.png" alt="Instagram"><a href="#"></a></img>
+                                                    <img src="https://i.ibb.co/6RrQx3z/smedia-icon-twitter.png" alt="Twitter"><a href="#"></a></img>
+                                                    <img src="https://i.ibb.co/Rb1Y6V2/smedia-icon-youtube.png" alt="Youtube"><a href="#"></a></img>
+                                                </td>
+                                            </tr>
+                                            <td colspan="3">
+                                                <p>© 2020 AllMart</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
